@@ -1,0 +1,76 @@
+.content, .wrapper:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  font-size: 1em;
+  padding: 1em;
+  width: 100pc;
+  height: 20.5pc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d( -50%, -50%,0);
+          transform: translate3d( -50%, -50%,25%);
+}
+
+.content {
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  mix-blend-mode: lighten;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  isolation: isolate;
+  position: relative;
+  height: 100vh;
+  padding: 1em;
+}
+
+.wrapper {
+  clip: rect(auto auto auto auto);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrapper:before {
+  content: " ";
+  padding: 2em 3.5em;
+  mix-blend-mode: darken;
+}
+
+.one {
+  background-image: url(https://i.imgur.com/tvAVMw5.jpg);
+}
+.one .wrapper:before {
+  background: #e4135d;
+}
+
+.two {
+  background-image: url(https://i.imgur.com/oaXmFC9.jpg);
+}
+.two .wrapper:before {
+  background: #faaa54;
+  mix-blend-mode: difference;
+}
+
+.three {
+  background-image: url(https://i.imgur.com/D5ewFA9.jpg);
+}
+.three .wrapper:before {
+  background: red;
+  mix-blend-mode: screen;
+}
+
+.four {
+  background-image: url(http://globalmedicalco.com/photos/globalmedicalco/17/81651.jpg);
+}
+.four .wrapper:before {
+  background: #e4135d;
+}

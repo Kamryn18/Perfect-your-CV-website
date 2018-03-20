@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect your CV</title>
+<link href="homestyle.css" rel="stylesheet"></link>
+<link rel=stylesheet type="text/css" href="2.css"></link>
+<div id="header">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.8">
+</head>
+  <a href="/" id="logo">Home</a>
+  <ul id="menu">
+    <li><a href="home.html"><span>Home</span></a></li>
+    <li><a href="About.html"><span>About</span></a></li>
+    <li><a href="Skills.html"><span>Skills</span></a></li>
+    <li><a href="Structure.html"><span>Structure</span></a></li>
+    <li><a href="Contact.html"><span>Contact</span></a></li>
+  </ul>
+</div>
+<body>
+
+  <pre>
+    Hello this is our blog all about writing a CV and how to structure it,
+    important skills to include, basically everything CV! Have a look around and
+    <b>let's get started!</b>
+  </pre>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img1.jpeg" style="width:100%">
+      <div class="text"><center><b>Get knowledge from a team of experts</b></center></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img2.jpeg" style="width:100%">
+      <div class="text"><center><b>Lean how teamwork can add value to your CV</b></center></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img3.jpeg" style="width:100%">
+      <div class="text"><center><b>The limits are endless with your perfect CV</b></div>
+    </div>
+
+  </div>
+
+<script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>
